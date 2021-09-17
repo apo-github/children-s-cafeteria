@@ -44,6 +44,11 @@ footer {
   text-align: center;
 }
 
+header {
+  background: #89c7de;
+  color: #fff;
+}
+
 /* 背景色透明度 */
 /* .op-06 {
   opacity: 0.6;
@@ -77,18 +82,29 @@ footer {
   margin-bottom: 8rem !important;
 }
 
-/* メディアクエリ */
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
+.mt-4 {
+  margin-top: 4rem !important;
+}
 
 /* ボタン形状 */
-
 .radius {
   border-radius: 20px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); /*影*/
 }
 
-/* ページ余白 */
-@media (min-width: 768px) {
-  .m-2 {
-    padding: 100px;
-  }
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.icon-brand {
+  background-image: url(./icon.png);
 }
