@@ -108,7 +108,7 @@ function blurFunc(){
 // HTML読み込み完了時に実行
 
 update();
-setInterval('update()', 2 * 100);
+setInterval('update()', 5 * 100);
 
 
 
