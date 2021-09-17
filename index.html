@@ -13,47 +13,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="m-2">
-    <div class="container-fluid fs-1">
-        <div class="col">
-            <div class="adult">
-                <p class="mb-1 p-1 bg-primary text-white rounded">大人</p>
-                <div class="row">
-                    <input class="btn btn-primary radius fs-1 col-3" type="button" onclick="adultIncrease()" value="＋">
-                    <p id="adult" class="col-2 d-flex align-items-center justify-content-center"></p>
-                    <input class=" btn btn-primary radius fs-1 col-3" type="button" onclick="adultDecrease()" value="－">
-                    <p class="col-2 font-kwi">合計:</p>
-                    <p id="adultSum" class="col-2  d-flex align-items-center"></p>
-                </div>
+<body">
+    <div  class="m-2 mb-8">
+        <div class="container-md fs-1">
+            <!-- 大人 -->
+            <div class="adult row bg-adult mb-1 p-1 rounded">
+                <p class="col-7 mb-1 p-1 rounded font-kwi">大人</p>
+                <p class="col-3 font-kwi d-flex align-items-center justify-content-end">合計</p>
+                <p id="adultSum" class="col-2 d-flex align-items-center justify-content-end"></p>
             </div>
-            <div class="child mt-3">
-                <p class="mb-1 p-1 bg-danger text-white rounded ch-op">子供</p>
-                <div class="row">
-                    <input class="btn btn-danger radius fs-1 col-3" type="button" onclick="childIncrease()" value="＋">
-                    <p id="child" class="col-2 d-flex align-items-center justify-content-center"></p>
-                    <input class=" btn btn-danger radius fs-1 col-3" type="button" onclick="childDecrease()" value="－">
-                    <p class="col-2 font-kwi">合計:</p>
-                    <p id="childSum" class="col-2  d-flex align-items-center"></p>
-                </div>
+            <div class="row">
+                <input class=" btn btn-adult radius fs-1 col-3" type="button" onclick="adultDecrease()" value="－">
+                <p id="adult" class="col-6 d-flex align-items-center justify-content-center"></p>
+                <input class="btn btn-adult radius fs-1 col-3" type="button" onclick="adultIncrease()" value="＋">
             </div>
-            <div class="add mt-3">
-                <p class="mb-1 p-1 bg-success text-white rounded">お代わり</p>
-                <div class="row">
-                    <input class="btn btn-success radius fs-1 col-3" type="button" onclick="addIncrease()" value="＋">
-                    <p id="add" class="col-2 d-flex align-items-center justify-content-center"></p>
-                    <input class=" btn btn-success radius fs-1 col-3" type="button" onclick="addDecrease()" value="－">
-                    <p class="col-2 font-kwi">合計:</p>
-                    <p id="addSum" class="col-2  d-flex align-items-center"></p>
-                </div>
+            <!-- 子供 -->
+            <div class="child row mt-4  mb-1 rounded bg-child">
+                <p class="col-7 mb-1 p-1 bg-child rounded font-kwi">子供</p>
+                <p class="col-3 font-kwi d-flex align-items-center justify-content-end">合計</p>
+                <p id="childSum" class="col-2  d-flex align-items-center justify-content-end"></p>
             </div>
-            <div class="add mt-5">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <input class="btn btn-secondary d-flex align-items-center justify-content-center rounded fs-5 col-3 " type="button" onclick="record()" value="記録">
-                    <div class="col-2"></div>
-                    <input class="btn btn-secondary d-flex align-items-center justify-content-center rounded fs-5 col-3" type="button" onclick="allClear()" value="クリア">
-                    <div class="col-2"></div>
-                </div>
+            <div class="row">
+                <input class=" btn btn-child radius fs-1 col-3" type="button" onclick="childDecrease()" value="－">
+                <p id="child" class="col-6 d-flex align-items-center justify-content-center"></p>
+                <input class="btn btn-child radius fs-1 col-3" type="button" onclick="childIncrease()" value="＋">
+            </div>
+            <!-- お代わり -->
+            <div class="add row mt-4 mb-1 rounded bg-add row">
+                <p class="col-7 mb-1 p-1 rounded font-kwi">お代わり</p>
+                <p class="col-3 font-kwi d-flex align-items-center justify-content-end">合計</p>
+                <p id="addSum" class="col-2  d-flex align-items-center justify-content-end"></p>
+            </div>
+            <div class="row">
+                <input class=" btn btn-add radius fs-1 col-3" type="button" onclick="addDecrease()" value="－">
+                <p id="add" class="col-6 d-flex align-items-center justify-content-center"></p>
+                <input class="btn btn-add radius fs-1 col-3" type="button" onclick="addIncrease()" value="＋">
+            </div>
+            <!-- コントローラー -->
+            <div class="mt-5 row">
+                <div class="col-2"></div>
+                <input class="btn btn-secondary d-flex align-items-center justify-content-center rounded fs-5 col-3 " type="button" onclick="record()" value="記録">
+                <div class="col-2"></div>
+                <input class="btn btn-secondary d-flex align-items-center justify-content-center rounded fs-5 col-3" type="button" onclick="allClear()" value="クリア">
+                <div class="col-2"></div>
             </div>
         </div>
     </div>

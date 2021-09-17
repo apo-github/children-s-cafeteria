@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 
-.mb-1,
 .font-kwi {
   font-family: "Kiwi Maru", serif, Roboto, "Droid Sans";
 }
@@ -26,8 +25,14 @@ small {
 }
 
 /* ダブルタップ拡大無効 */
-html {
+body {
   touch-action: manipulation;
+  font-feature-settings: "palt";
+  font-weight: bold;
+}
+
+input {
+  font-weight: bold !important;
 }
 
 /* フッター固定 */
@@ -40,50 +45,45 @@ footer {
 }
 
 /* 背景色透明度 */
-.rounded {
+/* .op-06 {
   opacity: 0.6;
 }
-.ch-op {
+.op-07 {
   opacity: 0.7;
-}
+} */
 
 /* primary カラー変更*/
-.btn-primary {
-  background-color: #6eaff3;
+.btn-adult {
+  background-color: #b4ebfa;
 }
-.bg-primary {
-  background-color: #6eaff3;
-}
-
-.btn-warning {
-  background-color: #f87474;
-}
-.bg-warning {
-  background-color: #f87474;
+.bg-adult {
+  background-color: #b4ebfa;
 }
 
-.btn-success {
-  background-color: #7dd37d;
+.btn-child {
+  background-color: #ffd1d1;
 }
-.bg-success {
-  background-color: #7dd37d;
+.bg-child {
+  background-color: #ffd1d1;
+}
+
+.btn-add {
+  background-color: #edc58f;
+}
+.bg-add {
+  background-color: #edc58f;
+}
+.mb-10 {
+  margin-bottom: 8rem !important;
 }
 
 /* メディアクエリ */
 
 /* ボタン形状 */
-@media (min-width: 0px) {
-  .radius {
-    border-radius: 50%;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); /*影*/
-  }
-}
-/* ボタン形状 */
-@media (min-width: 512px) {
-  .radius {
-    border-radius: 20px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); /*影*/
-  }
+
+.radius {
+  border-radius: 20px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); /*影*/
 }
 
 /* ページ余白 */
