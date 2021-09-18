@@ -94,8 +94,8 @@ function allClear(){
 }
 
 function record(){
-    sendParam("record", "record");
-    record("./record.txt");
+    // sendParam("record", "record");
+    // record("./record.txt");
 }
 
 // フォーカスを外す

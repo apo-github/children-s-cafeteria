@@ -25,6 +25,7 @@ small {
 }
 
 /* ダブルタップ拡大無効 */
+/* テキスト間隔を統一する */
 body {
   touch-action: manipulation;
   font-feature-settings: "palt";
@@ -78,7 +79,38 @@ header {
 .bg-add {
   background-color: #edc58f;
 }
-.mb-10 {
+/* btnアクション */
+.btn-adult:active {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background-color: #77bbce;
+  color: #e0ebf5;
+  -webkit-box-shadow: inset 0px 0px 8px #334c66;
+  -moz-box-shadow: inset 0px 0px 2px #3a6da0;
+  box-shadow: inset 0px 0px 2px #3a6da0;
+}
+
+.btn-child:active {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background-color: #df8282;
+  color: #e0ebf5;
+  -webkit-box-shadow: inset 0px 0px 8px #334c66;
+  -moz-box-shadow: inset 0px 0px 2px #3a6da0;
+  box-shadow: inset 0px 0px 2px #3a6da0;
+}
+
+.btn-add:active {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background-color: #d6994a;
+  color: #e0ebf5;
+  -webkit-box-shadow: inset 0px 0px 8px #334c66;
+  -moz-box-shadow: inset 0px 0px 2px #3a6da0;
+  box-shadow: inset 0px 0px 2px #3a6da0;
+}
+
+.mb-8 {
   margin-bottom: 8rem !important;
 }
 
